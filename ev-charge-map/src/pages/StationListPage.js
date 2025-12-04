@@ -13,7 +13,6 @@ function StationListPage() {
   const [message, setMessage] = useState("");
   const navigate = useNavigate();
 
-  // 🔥 useCallback으로 감싸서 useEffect에서 dependency 오류 안 나도록 함
   const loadStations = useCallback(
     async (overridePage) => {
       const currentPage = overridePage ?? page;
@@ -44,7 +43,6 @@ function StationListPage() {
     [keyword, chargerType, page] // loadStations 내부에서 사용하는 state들
   );
 
-  // 🔥 이제 ESLint 오류 없음
   useEffect(() => {
     loadStations();
   }, [loadStations]);
