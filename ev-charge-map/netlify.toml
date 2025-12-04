@@ -1,4 +1,7 @@
 [build]
-  base = ""
-  command = "npm run build"
-  publish = "build"
+  base = "ev-charge-map"
+  publish = "ev-charge-map/build"
+  command = "npm install && npm run build"
+
+[functions]
+  directory = "ev-charge-map/netlify/functions"
