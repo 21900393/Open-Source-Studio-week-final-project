@@ -6,7 +6,6 @@ function HomePage() {
 
   return (
     <div className="home-wrapper">
-      {/* 1. 히어로 섹션: 시선을 사로잡는 메인 문구 */}
       <section className="hero-section">
         <div className="hero-content">
           <span className="badge-tag">실시간 전기차 충전소 찾기</span>
@@ -23,7 +22,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* 2. 특징 섹션: 서비스의 장점 요약 */}
       <section className="features-grid">
         <div className="feature-card">
           <div className="feature-icon">📍</div>
@@ -42,7 +40,6 @@ function HomePage() {
         </div>
       </section>
 
-      {/* 3. 푸터: 프로젝트 정보 */}
       <footer className="home-footer">
         <div className="footer-line"></div>
         <p className="university">Handong Global University</p>
