@@ -141,7 +141,7 @@ function StationDetailPage() {
             boxShadow: '0 2px 4px rgba(0,0,0,0.1)'
           }}
         >
-          {loadingFavorite ? "확인 중..." : (isFavorite ? "❤️ 등록됨" : "🤍 관심 등록")}
+          {loadingFavorite ? "확인 중..." : (isFavorite ? "🤍 등록됨" : "❤️ 관심 등록")}
         </button>
       </div>
 
